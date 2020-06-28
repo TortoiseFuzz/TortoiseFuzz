@@ -1,0 +1,19 @@
+[
+  {
+    "catdoc":    ["cp",    "conf", ""], 
+    "libming":   ["mkdir", "conf", ""], 
+    "libtiff":   ["mkdir", "conf", "-m32"], 
+    "exiv2_9.17":["mkdir", "cmake", ""], 
+    "ngiflib":   ["cp",    "make", ""], 
+    "tcpreplay": ["mkdir", "conf", ""], 
+    "liblouis":  ["mkdir", "conf", ""], 
+    "exiv2":     ["cp", "conf", ""], 
+    "flvmeta":   ["mkdir", "cmake", ""], 
+    "gpac":      ["mkdir", "conf", ""], 
+    "new_exiv2": ["mkdir", "cmake", ""], 
+    "nasm":      ["mkdir", "conf", ""]
+  },
+  {
+    "tofuzz_path" : [absolute_path_to_tofuzz]
+  }
+]
