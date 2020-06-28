@@ -1,5 +1,6 @@
 #  About TortoiseFuzz
 
+<img align="left" src="logo.jpg" width=100>
 We propose coverage accounting, an innovative approach that evaluates code coverage by security impacts. Based on the proposed metrics, we design a new scheme to prioritize fuzzing inputs and develop TortoiseFuzz, a greybox fuzzer for memory corruption vulnerabilities. 
 Read the [NDSS 2020 paper (Not all coverage measurements are equal: fuzzing by coverage accounting for input prioritization)](https://www.ndss-symposium.org/ndss-paper/not-all-coverage-measurements-are-equal-fuzzing-by-coverage-accounting-for-input-prioritization/) for more details. TortoiseFuzz is developed based on top of Michal Zalewski's  (lcamtuf@google.com) AFL.
 
