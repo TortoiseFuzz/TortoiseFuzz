@@ -22,10 +22,14 @@ Before install TortoiseFuzz, user should prepare llvm.
     ```
 - Compile clang. `-DLLVM_ENABLE_ASSERTIONS=On` is required, otherwise the TortoiseFuzz maybe won't work properly.
     ```
-    $ mkdir build
+    $ mkdir build & cd build
     $ cmake -G "Unix Makefiles" -DLLVM_ENABLE_ASSERTIONS=On -DCMAKE_BUILD_TYPE=Release ../llvm
     $ make -j4
     $ make install
+    ```
+- Add the built clang 6.0.0 to your PATH environment.
+    ```
+    $ export PATH=path_to_clang/build/bin/:$PATH
     ```
 
 # Install TortoiseFuzz
