@@ -4818,7 +4818,7 @@ static u8 trim_case(char** argv, struct queue_entry* q, u8* in_buf) {
           needs_write = 1;
           memcpy(clean_trace, trace_bits, MAP_SIZE);
           memcpy(clean_memwrite, memwrite_bits, MAP_SIZE*sizeof(u32));
-          memcpy(clean_memread, memwrite_bits, MAP_SIZE*sizeof(u32));
+          memcpy(clean_memread, memread_bits, MAP_SIZE*sizeof(u32));
 
         }
 

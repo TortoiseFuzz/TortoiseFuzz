@@ -1,6 +1,7 @@
 #  About TortoiseFuzz
 
 <img align="left" src="logo.jpg" width=100>
+
 We propose coverage accounting, an innovative approach that evaluates code coverage by security impacts. Based on the proposed metrics, we design a new scheme to prioritize fuzzing inputs and develop TortoiseFuzz, a greybox fuzzer for memory corruption vulnerabilities. 
 Read the [NDSS 2020 paper (Not all coverage measurements are equal: fuzzing by coverage accounting for input prioritization)](https://www.ndss-symposium.org/ndss-paper/not-all-coverage-measurements-are-equal-fuzzing-by-coverage-accounting-for-input-prioritization/) for more details. TortoiseFuzz is developed based on top of Michal Zalewski's  (lcamtuf@google.com) AFL.
 
@@ -22,10 +23,14 @@ Before install TortoiseFuzz, user should prepare llvm.
     ```
 - Compile clang. `-DLLVM_ENABLE_ASSERTIONS=On` is required, otherwise the TortoiseFuzz maybe won't work properly.
     ```
-    $ mkdir build
+    $ mkdir build & cd build
     $ cmake -G "Unix Makefiles" -DLLVM_ENABLE_ASSERTIONS=On -DCMAKE_BUILD_TYPE=Release ../llvm
     $ make -j4
     $ make install
+    ```
+- Add the built clang 6.0.0 to your PATH environment variable.
+    ```
+    $ export PATH=path_to_clang/build/bin/:$PATH
     ```
 
 # Install TortoiseFuzz
